@@ -6,63 +6,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <style>
+        h1 {
+            font-size: 64px;
+            font-style: normal;
+        }
+        
+        h2 {
+            color: #828282;
+            font-size: 36px;
+            font-family: SVN-Gilroy;
+            font-weight: bold;
+            line-height: 40px;
+            font-style: normal;
+        }
+        
+        .grey {
+            color: #828282;
+        }
+        
+        .tag {
+            color: #EB5757;
+        }
+    </style>
 </head>
 
 <body>
-    <a href="https://www.facebook.com/lemanhhung2311/" target="_blank">f</a>
-    <a href="https://www.linkedin.com/" target="_blank">in</a>
-    <form>
-        <lablel for="share">Share</lablel>
-        <select id="share" name="share">
-            <option value="facebook">Facebook</option>
-            <option value="zalo">Zalo</option>
-            <option value="linked in">Linked In</option>
-        </select>
-    </form>
-    <img src="img/avatar.png" alt="Avatar">
-    <p><b>My Name</b></p>
-    <p>
-        <a href="mailto:myemail@gmail.com">myemail@gmail.com</a>
-        <button type="button" onclick="alert('Copied')">Copy</button>
-    </p>
-    <h1>My <span style="color: #EB5757;">Portfolio</span></h1>
-    <p>My main focuses are <b>HTML, CSS, JS, React</b></p>
-    <p>
-        <a href="#ecommerce">
-            <span style="color:#EB5757;">#ecommerce</span></a>
-        <a href="#technology"><span style="color: #EB5757;">#technology</span></a>
-        <a href="#entertainment"> <span style="color: #EB5757;">#entertainment</span></a>
-    </p>
-    <form>
-        <input type="search" name="search" placeholder="Search">
-        <input type="image" src="img/search.svg" alt="Search">
-    </form>
-    <p id="ecommerce">#ecommerce</p>
-    <img src="img/nordic-coder.png" alt="Nordic Coder">
-    <p><b>Nordic Coder</b></p>
-    <p><i>HTML, CSS, JS, React</i></p>
-    <img src="img/raidius.png" alt="Raidius">
-    <p><b>Raidius</b></p>
-    <p><i>HTML, CSS, JS, React</i></p>
-    <img src="img/loulou.png" alt="Loulou">
-    <p><b>Loulou</b></p>
-    <p><i>HTML, CSS, JS, React</i></p>
-    <img src="img/elpis.png" alt="Elpis"><br><br>
-    <p id="technology">#technology</p>
-    <img src="img/caesar.png" alt="Caesar">
-    <img src="img/unblock.png" alt="Unblock">
-    <img src="img/euforia.png" alt="Euforia">
-    <img src="img/charice.png" alt="Charice">
-    <img src="img/peony.png" alt="Peony">
-    <img src="img/cocosin.png" alt="Coco sin">
-    <img src="img/estella.png" alt="Estella">
-    <img src="img/uratv.png" alt="Uratv">
-    <img src="img/ugame.png" alt="Ugame">
-    <br><br>
-    <p id="entertainment">#entertainment</p>
-    <img src="img/mignonne.png" alt="Mignonne">
-    <img src="img/olaben.png" alt="Olaben">
-    <img src="img/arcade.png" alt="Arcade">
+    <nav>
+        <a href="https://www.facebook.com/lemanhhung2311/" target="_blank">f</a>
+        <a href="https://www.linkedin.com/" target="_blank">in</a>
+        <form>
+            <lablel for="share">Share</lablel>
+            <select id="share" name="share">
+                <option value="facebook">Facebook</option>
+                <option value="zalo">Zalo</option>
+                <option value="linked in">Linked In</option>
+            </select>
+        </form>
+        <img src="img/avatar.png" alt="Avatar">
+        <p><b>My Name</b></p>
+        <p>
+            <a class="grey" href="mailto:myemail@gmail.com">myemail@gmail.com</a>
+            <button type="button" onclick="alert('Copied')">Copy</button>
+        </p>
+    </nav>
+
+    <header>
+        <h1>My <span style="color: #EB5757;">Portfolio</span></h1>
+        <form>
+            My main focuses are <b>HTML, CSS, JS, React</b>
+            <input type="search" name="search" placeholder="Search">
+            <input type="image" src="img/search.svg" alt="Search">
+        </form>
+        <p>
+            <a class="tag" href="#ecommerce">#ecommerce</a>
+            <a class="tag" href="#technology">#technology</a>
+            <a class="tag" href="#entertainment">#entertainment</a>
+        </p>
+    </header>
+
+    <article>
+        <h2 id="ecommerce">#ecommerce</h2>
+        <img src="img/nordic-coder.png" alt="Nordic Coder">
+        <p>Nordic Coder</p>
+        <p class="grey"><i>HTML, CSS, JS, React</i></p>
+        <img src="img/raidius.png" alt="Raidius">
+        <p>Raidius</p>
+        <p class="grey"><i>HTML, CSS, JS, React</i></p>
+        <img src="img/loulou.png" alt="Loulou">
+        <p>Loulou</p>
+        <p class="grey"><i>HTML, CSS, JS, React</i></p>
+        <img src="img/elpis.png" alt="Elpis"><br><br>
+    </article>
+    <article>
+        <h2 id="technology">#technology</h2>
+        <img src="img/caesar.png" alt="Caesar">
+        <img src="img/unblock.png" alt="Unblock">
+        <img src="img/euforia.png" alt="Euforia">
+        <img src="img/charice.png" alt="Charice">
+        <img src="img/peony.png" alt="Peony">
+        <img src="img/cocosin.png" alt="Coco sin">
+        <img src="img/estella.png" alt="Estella">
+        <img src="img/uratv.png" alt="Uratv">
+        <img src="img/ugame.png" alt="Ugame">
+        <br><br>
+    </article>
+    <article>
+        <h2 id="entertainment">#entertainment</h2>
+        <img src="img/mignonne.png" alt="Mignonne">
+        <img src="img/olaben.png" alt="Olaben">
+        <img src="img/arcade.png" alt="Arcade">
+    </article>
+
+    <footer>
+        <p>Copyright &COPY; 2020 Your Name. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
