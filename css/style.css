@@ -1,0 +1,44 @@
+h1 {
+    font-size: 64px;
+    font-style: normal;
+}
+
+h2 {
+    color: #828282;
+    font-size: 36px;
+    font-family: SVN-Gilroy;
+    font-weight: bold;
+    line-height: 40px;
+    font-style: normal;
+}
+
+.grey {
+    color: #828282;
+}
+
+.tag {
+    color: #EB5757;
+}
+
+ ::selection {
+    background-color: aquamarine;
+}
+
+.send {
+    background-color: black;
+    color: white;
+}
+
+.send:hover {
+    background-color: grey;
+}
+
+.center {
+    text-align: center;
+}
+
+.header {
+    text-align: right;
+    background-color: black;
+    color: white;
+}

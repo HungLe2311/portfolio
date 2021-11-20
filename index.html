@@ -6,51 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <style>
-        h1 {
-            font-size: 64px;
-            font-style: normal;
-        }
-        
-        h2 {
-            color: #828282;
-            font-size: 36px;
-            font-family: SVN-Gilroy;
-            font-weight: bold;
-            line-height: 40px;
-            font-style: normal;
-        }
-        
-        .grey {
-            color: #828282;
-        }
-        
-        .tag {
-            color: #EB5757;
-        }
-    </style>
+    <link href="fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
-        <a href="https://www.facebook.com/lemanhhung2311/" target="_blank">f</a>
-        <a href="https://www.linkedin.com/" target="_blank">in</a>
-        <form>
-            <lablel for="share">Share</lablel>
-            <select id="share" name="share">
-                <option value="facebook">Facebook</option>
-                <option value="zalo">Zalo</option>
-                <option value="linked in">Linked In</option>
-            </select>
-        </form>
+    <nav class="header">
+        <a href="contact.html">Contact</a>
+        <a href="https://www.facebook.com/lemanhhung2311/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+        <select name="share">
+            <option value="Share">Share</option>
+            <option value="facebook">Facebook</option>
+            <option value="instagram">Instagram</option>
+            <option value="linked in">Linked In</option>
+        </select>
+    </nav>
+    <nav class="center">
         <img src="img/avatar.png" alt="Avatar">
         <p><b>My Name</b></p>
         <p>
             <a class="grey" href="mailto:myemail@gmail.com">myemail@gmail.com</a>
-            <button type="button" onclick="alert('Copied')">Copy</button>
+            <button type="button" onclick="alert('Copied')"><i class="fas fa-clone"></i></button>
         </p>
     </nav>
-
     <header>
         <h1>My <span style="color: #EB5757;">Portfolio</span></h1>
         <form>
