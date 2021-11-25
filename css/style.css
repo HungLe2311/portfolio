@@ -3,8 +3,17 @@
     src: url(../font/svn-gilroy-medium.otf);
 }
 
-* {
+@font-face {
     font-family: svn-gilroy;
+    src: url(../font/svn-gilroy-bold.otf);
+    font-weight: bold;
+}
+
+
+/* dung * de apply cho tat ca cac elements*/
+
+* {
+    font-family: svn-gilroy, Helvetica, sans-serif;
 }
 
 h1 {
@@ -64,4 +73,15 @@ a:hover {
 
 a:active {
     color: green;
+}
+
+
+/* link trong phan header giu nguyen mau trang*/
+
+.header a {
+    color: white
+}
+
+body {
+    font-size: 100%;
 }
