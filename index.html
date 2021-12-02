@@ -23,19 +23,30 @@
             <option value="linked in">Linked In</option>
         </select>
     </nav>
-    <nav class="center">
-        <img src="img/avatar.png" alt="Avatar">
-        <p><b>My Name</b></p>
-        <p>
-            <a class="grey" href="mailto:myemail@gmail.com">myemail@gmail.com</a>
-            <button type="button" onclick="alert('Copied')"><i class="fas fa-clone"></i></button>
-        </p>
+    <nav>
+        <div class="center">
+            <img class="avatar" src="img/avatar.png" alt="Avatar">
+            <p><b>My Name</b></p>
+            <p>
+                <a class="grey" href="mailto:myemail@gmail.com">myemail@gmail.com</a>
+                <button class="copy" type="button" onclick="alert('Copied')"><i class="fas fa-clone"></i></button>
+            </p>
+        </div>
+        <ul>
+            <li>
+                <a class="menu-item-active" href="index.html"><img src="img/my-portfolio.svg" alt="Portfolio"> My Portfolio</a>
+            </li>
+            <li>
+                <a href="aboutme.html"><img src="img/about-me.svg" alt="About"> About Me</a>
+            </li>
+        </ul>
+
     </nav>
     <header>
         <h1>My <span style="color: #EB5757;">Portfolio</span></h1>
         <form>
             My main focuses are <b>HTML, CSS, JS, React</b>
-            <input type="search" name="search" placeholder="Search">
+            <input class="search" type="search" name="search" placeholder="Search">
             <input type="image" src="img/search.svg" alt="Search">
         </form>
         <p>
