@@ -1,119 +1,126 @@
-@font-face {
-    font-family: svn-gilroy;
-    src: url(../font/svn-gilroy-medium.otf);
-}
-
-@font-face {
-    font-family: svn-gilroy;
-    src: url(../font/svn-gilroy-bold.otf);
-    font-weight: bold;
-}
-
-
-/* dung * de apply cho tat ca cac elements*/
-
-* {
-    font-family: svn-gilroy, Helvetica, sans-serif;
-}
-
-h1 {
-    font-size: 64px;
-    font-style: normal;
-}
-
-h2 {
-    color: #828282;
-    font-size: 36px;
-    font-family: SVN-Gilroy;
-    font-weight: bold;
-    line-height: 40px;
-    font-style: normal;
-}
-
-.grey {
-    color: #828282;
-}
-
-.tag {
-    color: #EB5757;
-}
-
- ::selection {
-    background-color: aquamarine;
-}
-
-.center {
-    text-align: center;
-}
-
-.header {
-    text-align: right;
-    background-color: black;
-    color: white;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    color: rgb(58, 58, 250);
-    text-decoration: underline;
-}
-
-a:active {
-    color: green;
-}
-
-
-/* link trong phan header giu nguyen mau trang*/
-
-.header a {
-    color: white
-}
-
-body {
-    font-size: 100%;
-}
-
-.menu-item-active {
-    border-left: 5px solid #EB5757;
-}
-
-.table {
-    border-collapse: collapse;
-}
-
-.table tr {
-    border-bottom: 1px solid #E0E0E0;
-}
-
-.copy {
-    border: none;
-    background-color: white;
-}
-
-.search {
-    border: none;
-}
-
-.send {
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    padding: 16px 63px;
-}
-
-.send:hover {
-    background-color: grey;
-}
-
-.avatar {
-    margin-top: 48px;
-}
-
-#ecommerce {
-    margin: 29px 0px 20px 309px;
-}
+    @font-face {
+        font-family: svn-gilroy;
+        src: url(../font/svn-gilroy-medium.otf);
+    }
+    
+    @font-face {
+        font-family: svn-gilroy;
+        src: url(../font/svn-gilroy-bold.otf);
+        font-weight: bold;
+    }
+    /* dung * de apply cho tat ca cac elements*/
+    
+    * {
+        font-family: svn-gilroy, Helvetica, sans-serif;
+    }
+    
+    h1 {
+        font-size: 64px;
+        font-style: normal;
+    }
+    
+    h2 {
+        color: #828282;
+        font-size: 36px;
+        font-family: SVN-Gilroy;
+        font-weight: bold;
+        line-height: 40px;
+        font-style: normal;
+    }
+    
+    .grey {
+        color: #828282;
+    }
+    
+    .tag {
+        color: #EB5757;
+    }
+    
+     ::selection {
+        background-color: aquamarine;
+    }
+    
+    .center {
+        text-align: center;
+    }
+    
+    .header {
+        text-align: right;
+        background-color: black;
+        color: white;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    a:hover {
+        color: rgb(58, 58, 250);
+        text-decoration: underline;
+    }
+    
+    a:active {
+        color: green;
+    }
+    /* link trong phan header giu nguyen mau trang*/
+    
+    .header a {
+        color: white
+    }
+    
+    body {
+        font-size: 100%;
+    }
+    
+    .menu-item-active {
+        border-left: 5px solid #EB5757;
+    }
+    
+    .table {
+        border-collapse: collapse;
+    }
+    
+    .table tr {
+        border-bottom: 1px solid #E0E0E0;
+    }
+    
+    .copy {
+        border: none;
+        background-color: transparent;
+    }
+    
+    .search {
+        border: none;
+    }
+    
+    .send {
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        padding: 16px 63px;
+    }
+    
+    .send:hover {
+        background-color: grey;
+    }
+    
+    .avatar {
+        margin-top: 48px;
+    }
+    
+    #ecommerce {
+        margin: 29px 0px 20px 309px;
+    }
+    
+    .percent {
+        background-color: #EB5757;
+        height: 5px;
+    }
+    
+    .share {
+        background-color: transparent;
+        color: white;
+        border: none;
+    }
