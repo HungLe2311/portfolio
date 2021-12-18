@@ -1,167 +1,338 @@
-    @font-face {
-        font-family: svn-gilroy;
-        src: url(../font/svn-gilroy-medium.otf);
-    }
-    
-    @font-face {
-        font-family: svn-gilroy;
-        src: url(../font/svn-gilroy-bold.otf);
-        font-weight: bold;
-    }
-    /* dung * de apply cho tat ca cac elements*/
-    
-    * {
-        font-family: svn-gilroy, Helvetica, sans-serif;
-    }
-    
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    
-    h1 {
-        font-size: 64px;
-        font-style: normal;
-    }
-    
-    h2 {
-        color: #828282;
-        font-size: 36px;
-        font-family: SVN-Gilroy;
-        font-weight: bold;
-        line-height: 40px;
-        font-style: normal;
-    }
-    
-    .grey {
-        color: #828282;
-    }
-    
-    .tag {
-        color: #EB5757;
-    }
-    
-     ::selection {
-        background-color: aquamarine;
-    }
-    
-    .center {
-        text-align: center;
-    }
-    
-    .header {
-        text-align: right;
-        background-color: black;
-        color: white;
-    }
-    
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    
-    a:hover {
-        color: rgb(58, 58, 250);
-        text-decoration: underline;
-    }
-    
-    a:active {
-        color: green;
-    }
-    /* link trong phan header giu nguyen mau trang*/
-    
-    .header a {
-        color: white
-    }
-    
-    body {
-        font-size: 100%;
-    }
-    
-    .menu-item-active {
-        border-left: 5px solid #EB5757;
-    }
-    
-    .table {
-        border-collapse: collapse;
-    }
-    
-    .table tr {
-        border-bottom: 1px solid #E0E0E0;
-    }
-    
-    .copy {
-        border: none;
-        background-color: transparent;
-    }
-    
-    .search-input {
-        position: relative;
-        width: 260px;
-    }
-    
-    .search {
-        border: none;
-        background: #F2F2F2;
-        padding: 10px 20px;
-        width: 260px;
-        height: 40px;
-    }
-    
-    .search-icon {
-        position: absolute;
-        top: 10px;
-        right: 20px;
-    }
-    
-    .send {
-        background-color: black;
-        color: white;
-        border: none;
-        border-radius: 30px;
-        padding: 16px 63px;
-    }
-    
-    .send:hover {
-        background-color: grey;
-    }
-    
-    .avatar {
-        margin-top: 48px;
-    }
-    /* #ecommerce {
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: svn-gilroy;
+    src: url(../font/svn-gilroy-medium.otf);
+}
+
+@font-face {
+    font-family: svn-gilroy;
+    src: url(../font/svn-gilroy-bold.otf);
+    font-weight: bold;
+}
+
+
+/* dung * de apply cho tat ca cac elements*/
+
+* {
+    font-family: svn-gilroy, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 64px;
+    font-style: normal;
+    margin-top: 50px;
+}
+
+h2 {
+    color: #828282;
+    font-size: 36px;
+    font-family: SVN-Gilroy;
+    font-weight: bold;
+    line-height: 40px;
+    font-style: normal;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.title {
+    padding-right: 50px;
+    justify-content: space-between;
+}
+
+.grey {
+    color: #828282;
+}
+
+.tag {
+    margin-top: 25px;
+}
+
+.tag a {
+    color: #EB5757;
+}
+
+ ::selection {
+    background-color: aquamarine;
+}
+
+.center {
+    text-align: center;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+.header a {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgb(58, 58, 250);
+    text-decoration: underline;
+}
+
+a:active {
+    color: green;
+}
+
+
+/* link trong phan header giu nguyen mau trang*/
+
+.header a {
+    color: white
+}
+
+body {
+    font-size: 100%;
+}
+
+.main {
+    flex: 1;
+}
+
+.menu-item {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.menu-item img {
+    margin-right: 20px;
+}
+
+.menu-item.active::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 2px;
+    background: #EB5757;
+    bottom: 0;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.align-item-center p {
+    margin-left: 20px;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.table tr {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.table tr:last-child {
+    border-bottom: none;
+}
+
+table th,
+td {
+    text-align: left;
+    padding: 15px 25px;
+}
+
+.languages {
+    margin-left: 20px;
+}
+
+.copy {
+    border: none;
+    background-color: transparent;
+}
+
+.search-input {
+    position: relative;
+    width: 260px;
+}
+
+.search {
+    border: none;
+    background: #F2F2F2;
+    padding: 10px 20px;
+    width: 260px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.send {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 16px 63px;
+}
+
+.send:hover {
+    background-color: grey;
+}
+
+.avatar {
+    margin-top: 48px;
+}
+
+
+/* #ecommerce {
         margin: 29px 0px 20px 309px;
     } */
-    
-    .percent {
-        background-color: #EB5757;
-        height: 5px;
-    }
-    
-    .share {
-        background-color: transparent;
-        color: white;
-        border: none;
-    }
-    
-    .flex-container {
-        display: flex;
-    }
-    
-    .project {
-        flex-wrap: wrap;
-    }
-    
-    .project>div {
-        width: 200px;
-        margin: 10px;
-    }
-    
-    .project img {
-        width: 100%;
-    }
-    
-    .menu {
-        padding: 5rem;
-    }
+
+.percent {
+    background-color: #EB5757;
+    height: 5px;
+}
+
+.share {
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.share option {
+    color: black;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+video,
+iframe {
+    height: 280px;
+    width: 500px;
+    margin: 10px;
+}
+
+.project {
+    flex-wrap: wrap;
+}
+
+.project>div {
+    width: 200px;
+    height: 280px;
+    margin: 10px;
+    position: relative;
+}
+
+.project img {
+    width: 100%;
+}
+
+.menu {
+    width: 256px;
+}
+
+.align-self-end {
+    align-self: flex-end;
+}
+
+.text-project {
+    background: rgba(255, 255, 255, 0.9);
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    font-size: 17px;
+    padding: 17px 15px 0;
+}
+
+footer {
+    color: #828282;
+    background: #F2F2F2;
+    height: 50px;
+    position: relative;
+    margin-top: 60px;
+}
+
+footer p {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+}
+
+table {
+    background: rgba(242, 242, 242, 0.5);
+    width: 535px;
+    border-radius: 10px;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+.contact {
+    border-radius: 20px;
+    border: none;
+    background: #F2F2F2;
+    width: 470px;
+    padding: 7px 0 0 19px;
+    height: 40px;
+}
+
+textarea.contact {
+    height: 130px;
+}
+
+.address {
+    margin-left: 395px;
+}
+
+.song2 {
+    margin-left: 60px;
+}
+
+.hobbies li {
+    margin: 5px;
+}
